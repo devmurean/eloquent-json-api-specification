@@ -1,0 +1,41 @@
+{
+  "name": "devmurean/eloquent-json-api-specification",
+  "description": "Easily format Eloquent model into JSON:API specification",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "role": "Developer",
+      "name": "Dev Murean"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "DevMurean\\EloquentJsonApiSpec\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DevMurean\\EloquentJsonApiSpec\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "require": {
+    "php": "^8.4",
+    "illuminate/database": "*",
+    "illuminate/support": "*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^10.6",
+    "pestphp/pest": "^4.1"
+  }
+}
